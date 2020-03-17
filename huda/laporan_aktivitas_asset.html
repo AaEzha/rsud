@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Apps - Dashboard</title>
+
+	<!-- Javascript External -->
+	<script src="external/js/jquery.js"></script>
+	<script src="external/js/bootstrap.min.js"></script>
+	<script src="external/js/highcharts.js"></script>
+	<script src="external/js/highcharts-exporting.js"></script>
+	<script src="external/js/highcharts-export-data.js"></script>
+	<script src="external/js/highcharts-accessibility.js"></script>
+
+	<!-- Javascript Internal -->
+	<script src="internal/js/button_action.js"></script>
+	<script src="internal/js/modal.js"></script>
+
+	<!-- CSS External -->
+	<link rel="stylesheet" type="text/css" href="external/css/bootstrap.min.css">
+
+	<!-- CSS Internal -->
+	<link rel="stylesheet" type="text/css" href="internal/css/form.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/content.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/button_action.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/modal.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/loading.css">
+</head>
+
+<body class="dashboard-body">
+	<div class="loading">
+		<img src="image/asset/loading.gif" alt="">
+	</div>
+	<div class="modal-item"></div>
+
+	<div class="header-container">
+		<div class="rounded c-base">
+			Admin App
+		</div>
+		<div class="rounded c-trans">
+			<div class="account-img c-base rounded">
+				<label class="account-init">DF</label>
+				<img src="image/profile_photo/profile.png" alt="">
+			</div>
+			<label class="account-name">Shiren Sunkar / Admin Aset</label>
+		</div>
+		<a href="" class="btn btn-danger rounded pull-right">close</a>
+	</div>
+	<div class="content-container">
+		<div class="col col-content padding-content">
+			<h4 class="bold">LAPORAN AKTIVITAS</h4>
+			<div class="date-info f-green padding-tanggal">
+				Jumat, 13 Maret 2020
+			</div><br />
+			<div class="f-col f-float-round pad-sm">
+				<div class="flex">
+					<div class="f-col-8">
+						<div class="head-form-control">Filter</div>
+						<select class="form-control">
+							<option value="" disabled selected>Pilih Unit Aset (Asset / unit )</option>
+							<option></option>
+						</select>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="f-col-4">
+						<select class="form-control">
+							<option value="" disabled selected>Bulan</option>
+							<option></option>
+						</select>
+					</div>
+					<div class="f-col-4">
+						<select class="form-control">
+							<option value="" disabled selected>Tahun</option>
+							<option></option>
+						</select>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="f-col-4">
+						<a href="" class="btn c-success rounded pull-right" style="width: 100px;">CARI</a>
+					</div>
+				</div>
+			</div><br>
+			<div class="flex">
+				<div class="f-col-8">
+					<div class="head-form-control">Laporan Aktifitas Bulan Desember 2019</div>
+				</div>
+				<div class="f-col-6">
+                    <ul class="sub-menu-container">
+                        <li class="item active"><a href="">Aktifitas</a></li>
+                        <li class="sep">|</li>
+						<li class="item"><a href="">Spare Part</a></li>
+						<li class="sep">|</li>
+                        <li class="item"><a href="">Pihak Ke 3</a></li>
+                    </ul>
+                </div>
+			</div>
+			<div class="flex">
+				<div class="f-col">
+					<table class="table table-green table-bordered">
+						<col>
+						<colgroup span="2"></colgroup>
+						</col>
+						<tr class="c-success">
+							<th colspan="1" rowspan="2" scope="colgroup">No</th>
+							<th colspan="1" rowspan="2" scope="colgroup">Unit Aset</th>
+							<th colspan="1" rowspan="2" scope="colgroup">Tanggal</th>
+							<th colspan="4" scope="colgroup">Permintaan</th>
+							<th colspan="2" scope="colgroup">Asset</th>
+							<th colspan="1" rowspan="2" scope="colgroup"> Status Tiket</th>
+						</tr>
+						<tr class="c-success">
+							<th scope="col">ID</th>
+							<th scope="col">Jenis Tiket</th>
+							<th scope="col">Waktu</th>
+							<th scope="col">Ruangan</th>
+							<th scope="col">Id Asset</th>
+							<th scope="col">Nama Asset</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td>IT</td>
+							<td></td>
+							<td>PERBAIKAN</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>OPEN</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>IT</td>
+							<td></td>
+							<td>PERBAIKAN</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>OPEN</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>IT</td>
+							<td></td>
+							<td>PERBAIKAN</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>OPEN</td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+		</div>
+		<div class="col col-menu pad-sm">
+			<div class="menu-logo">
+				<img src="image/asset/app-logo.png" alt="">
+			</div>
+			<div class="menu-button">
+				<a href="profile_edit.html" class="menu-item">
+					<div class="menu-icon">
+						<img src="image/asset/web.png" alt="">
+					</div>
+					<div class="menu-text">
+						<div class="menu-title">DASHBOARD</div>
+						<div class="menu-desc">Merupakan preview dari aktivitas penggunaan sparepart</div>
+					</div>
+				</a>
+			</div>
+			<div class="menu-button">
+				<a href="profile_edit.html" class="menu-item active">
+					<div class="menu-icon">
+						<img src="image/asset/report.png" alt="">
+					</div>
+					<div class="menu-text">
+						<div class="menu-title">Laporan Aktivitas</div>
+						<div class="menu-desc">Laporan aktivitas penyelesaian pemenuhan kebutuhan spare part dan
+							aset
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-container">
+		<label>Nine Cloud 2019</label>
+	</div>
+</body>
+<script src="internal/js/general.js"></script>
+
+</html>

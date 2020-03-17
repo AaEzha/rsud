@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apps - Dashboard</title>
+
+	<!-- Javascript External -->
+	<script src="external/js/jquery.js"></script>
+	<script src="external/js/bootstrap.min.js"></script>
+	<script src="external/js/highcharts.js"></script>
+	<script src="external/js/highcharts-exporting.js"></script>
+	<script src="external/js/highcharts-export-data.js"></script>
+	<script src="external/js/highcharts-accessibility.js"></script>
+
+	<!-- Javascript Internal -->
+	<script src="internal/js/button_action.js"></script>
+	<script src="internal/js/modal.js"></script>
+
+	<!-- CSS External -->
+	<link rel="stylesheet" type="text/css" href="external/css/bootstrap.min.css">
+	
+	<!-- CSS Internal -->
+	<link rel="stylesheet" type="text/css" href="internal/css/form.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/content.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/button_action.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/modal.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/loading.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/button.css">
+</head>
+<body class="dashboard-body">
+	<div class="loading">
+		<img src="image/asset/loading.gif" alt="">
+	</div>
+	<div class="modal-item"></div>
+
+	<div class="header-container">
+		<div class="rounded c-base">
+			Master data	
+		</div>
+		<div class="rounded c-trans">
+			<div class="account-img c-base rounded">
+				<label class="account-init">DF</label>
+				<img src="image/profile_photo/profile.png" alt="">
+			</div>
+			<label class="account-name">Sherina Munaf / Admin IT</label>
+		</div>
+		<a href="" class="btn btn-danger rounded pull-right">close</a>
+	</div>
+	<div class="content-container">
+		<div class="col col-content m-content padding-content">
+			<h4 class="bold">TAMBAH PENGGUNA</h4>
+			<ul class="sub-menu-container">
+				<li class="item active"><a href="">Tambah Pengguna</a></li>
+				<li class="sep">|</li>
+				<li class="item"><a href="">Data Pengguna</a></li>
+			</ul>
+			<div class="date-info f-green padding-tanggal">
+				Jumat, 13 Maret 2020
+			</div><br/><br/>
+			<div class="flex">
+				<div class="f-col-9">
+					<div class="head-form-control">Pilih Karyawan</div>
+						<select class="form-control">
+							<option></option>
+							<option></option>
+						</select>
+				</div>
+				<div class="b-lock">
+					<a href="" class="btn btn-danger rounded pull-right">LOCK</a>
+				</div>
+			</div><br/>
+			<div class="flex">
+				<div class="f-col">
+					<div class="head-form-control">Tambah Data Pengguna</div>
+					<div class="label m-input">
+						<input type="text" class="form-control" name="nama" value="" placeholder="Nama Pengguna">
+					</div>
+					<div class="label m-input">
+						<input type="text" class="form-control" name="username" value="" placeholder="Username">
+					</div>
+					<div class="label m-input">
+						<input type="text" class="form-control" name="password" value="" placeholder="Password">
+					</div>
+					<div class="label m-input">
+						<input type="email" class="form-control" name="email" value="" placeholder="Email">
+					</div>
+					<div class="label m-input">
+						<input type="text" class="form-control input number" name="phone" value="" placeholder="Nomer Tlp">
+					</div>
+					<div class="label m-input">
+						<select class="form-control" name="posisi">
+							<option value="" disabled selected>Posisi -- CS IT / Petugas Lapangan</option>
+							<option>CS IT</option>
+							<option>PETUGAS LAPANGAN</option>
+						</select>
+					</div>
+					<div class="label m-input">
+						<select class="form-control" name="posisi">
+							<option value="" disabled selected>Status -- CS IT / Aktif</option>
+							<option>Aktif</option>
+							<option>Tidak Aktif</option>
+						</select>
+					</div><br/>
+					<a href="" class="btn btn-success btn-lg right shadow">SIMPAN</a>
+				</div>
+			</div>
+		</div>
+		<div class="col col-menu pad-sm">
+			<div class="menu-logo">
+				<img src="image/asset/app-logo.png" alt="">
+			</div>
+			<div class="menu-button">
+				<a href="profile_edit.html" class="menu-item active">
+					<div class="menu-icon">
+						<img src="image/asset/users.png" alt="">
+					</div>
+					<div class="menu-text">
+						<div class="menu-title">DATA PENGGUNA</div>
+						<div class="menu-desc">Pengguna aplikasi dan hak akes terhadap aplikasi</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-container">
+		<label>Nine Cloud 2019</label>
+	</div>
+</body>
+<script src="internal/js/general.js"></script>
+</html>

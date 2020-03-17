@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Apps - Dashboard</title>
+
+    <!-- Javascript External -->
+    <script src="external/js/jquery.js"></script>
+    <script src="external/js/bootstrap.min.js"></script>
+    <script src="external/js/highcharts.js"></script>
+    <script src="external/js/highcharts-exporting.js"></script>
+    <script src="external/js/highcharts-export-data.js"></script>
+    <script src="external/js/highcharts-accessibility.js"></script>
+
+    <!-- Javascript Internal -->
+    <script src="internal/js/button_action.js"></script>
+    <script src="internal/js/modal.js"></script>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" type="text/css" href="external/css/bootstrap.min.css">
+
+    <!-- CSS Internal -->
+    <link rel="stylesheet" type="text/css" href="internal/css/form.css">
+    <link rel="stylesheet" type="text/css" href="internal/css/content.css">
+    <link rel="stylesheet" type="text/css" href="internal/css/button_action.css">
+    <link rel="stylesheet" type="text/css" href="internal/css/modal.css">
+    <link rel="stylesheet" type="text/css" href="internal/css/loading.css">
+</head>
+
+<body class="dashboard-body">
+    <div class="loading">
+        <img src="image/asset/loading.gif" alt="">
+    </div>
+    <div class="modal-item"></div>
+
+    <div class="header-container">
+        <div class="rounded c-base">
+            Admin Asset
+        </div>
+        <div class="rounded c-trans">
+            <div class="account-img c-base rounded">
+                <label class="account-init">DF</label>
+                <img src="image/profile_photo/profile.png" alt="">
+            </div>
+            <label class="account-name">Shiren Sunkar/ Admin Aset</label>
+        </div>
+        <a href="" class="btn btn-danger rounded pull-right">close</a>
+    </div>
+    <div class="content-container">
+        <div class="col col-content padding-content">
+			<h4 class="bold">DASHBOARD</h4>
+			<div class="date-info f-green padding-tanggal">
+				Jumat, 13 Maret 2020
+            </div> <br/>
+            <div class="flex">
+                <div class="f-col-7 f-float-round pad-lg">
+                    <div class="image-round">
+                        <label class="profil-init">AC</label>
+                        <img src="image/profile_photo/profile.png" alt="">
+                    </div>
+                    <div class="bg-profil"></div>
+                </div>
+                <div class="f-col f-float-round padding-tanggal" style="margin-left: 50px;">
+                    <div class="label pad-xs">
+                        <div class="title">Nama</div>
+                        <div class="desc-clr">SHIREN SUNKAR</div>
+                    </div>
+                    <div class="label pad-xs">
+                        <div class="title">Posisi</div>
+                        <div class="desc-clr">Admin ASSET</div>
+                    </div>
+                    <div class="label pad-xs">
+                        <div class="title">Status</div>
+                        <div class="desc-clr">Aktif</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="f-col top-10">
+                    <div class="label top-10">
+                        <div class="title">Username</div>
+                        <div class="desc">Shiren_Cantix</div>
+                    </div>
+                    <div class="label top-10">
+                        <div class="title">Passowrd</div>
+                        <div class="desc">Shiren112233</div>
+                    </div>
+                    <div class="label top-10">
+                        <div class="title">Email</div>
+                        <div class="desc">shiren.sunkar@gmail.com</div>
+                    </div>
+                    <div class="label top-10">
+                        <div class="title">No Telephone</div>
+                        <div class="desc"> 0812345678910</div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        <div class="col col-menu pad-sm">
+            <div class="menu-logo">
+                <img src="image/asset/app-logo.png" alt="">
+            </div>
+            <div class="menu-button">
+                <a href="profile_edit.html" class="menu-item active">
+                    <div class="menu-icon">
+                        <img src="image/asset/web.png" alt="">
+                    </div>
+                    <div class="menu-text">
+                        <div class="menu-title">Dashboard</div>
+                        <div class="menu-desc">Merupakan Preview dari aktifitas yang dilakukan masing-masing unit</div>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-button">
+                <a href="profile_edit.html" class="menu-item">
+                    <div class="menu-icon">
+                        <img src="image/asset/followers.png" alt="">
+                    </div>
+                    <div class="menu-text">
+                        <div class="menu-title">Edit Profile</div>
+                        <div class="menu-desc">Merubah profil pengguna untuk keamanan akun anda</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <label>Nine Cloud 2019</label>
+    </div>
+</body>
+<script src="internal/js/general.js"></script>
+<script src="internal/js/line-chart.js"></script>
+
+</html>

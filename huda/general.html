@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apps - Dashboard</title>
+
+	<!-- Javascript External -->
+	<script src="external/js/jquery.js"></script>
+	<script src="external/js/bootstrap.min.js"></script>
+	<script src="external/js/highcharts.js"></script>
+	<script src="external/js/highcharts-exporting.js"></script>
+	<script src="external/js/highcharts-export-data.js"></script>
+	<script src="external/js/highcharts-accessibility.js"></script>
+
+	<!-- Javascript Internal -->
+	<script src="internal/js/button_action.js"></script>
+	<script src="internal/js/modal.js"></script>
+
+	<!-- CSS External -->
+	<link rel="stylesheet" type="text/css" href="external/css/bootstrap.min.css">
+	
+	<!-- CSS Internal -->
+	<link rel="stylesheet" type="text/css" href="internal/css/form.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/content.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/button_action.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/modal.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/loading.css">
+</head>
+<body class="dashboard-body">
+	<div class="loading">
+		<img src="image/asset/loading.gif" alt="">
+	</div>
+	<div class="modal-item"></div>
+
+	<div class="header-container">
+		<div class="rounded c-base">
+			Menu Name
+		</div>
+		<div class="rounded c-trans">
+			<div class="account-img c-base rounded">
+				<label class="account-init">S</label>
+				<img src="" alt="">
+			</div>
+			<label class="account-name">Someone / Admin</label>
+		</div>
+		<a href="dashboard.html" class="pull-right rounded c-danger">Close</a>
+	</div>
+	<div class="content-container">
+		<div class="col col-content">
+			<h4>GENERAL</h4>
+			<div class="date-info">
+				1 Januari 1999
+			</div>
+			<a class="menu-icon-trans comming-soon" href="#">
+				<div class="menu-container c-danger">
+					<img src="image/asset/users.png" class="menu-icon">
+					<div class="menu-body">
+						<div class="menu-title">Title</div>
+						<div class="menu-desc"> Desc - lorem ipsum dolor si amet lorem ipsum dolor si amet </div>
+					</div>
+				</div>
+			</a>
+			<a class="menu-icon-trans comming-soon" href="#">
+				<div class="menu-container c-warning">
+					<img src="image/asset/users.png" class="menu-icon">
+					<div class="menu-body">
+						<div class="menu-title">Title</div>
+						<div class="menu-desc"> Desc - lorem ipsum dolor si amet lorem ipsum dolor si amet </div>
+					</div>
+				</div>
+			</a>
+			<a class="menu-icon-trans comming-soon" href="#">
+				<div class="menu-container c-success">
+					<img src="image/asset/users.png" class="menu-icon">
+					<div class="menu-body">
+						<div class="menu-title">Title</div>
+						<div class="menu-desc"> Desc - lorem ipsum dolor si amet lorem ipsum dolor si amet </div>
+					</div>
+				</div>
+			</a>
+			<ul class="sub-menu-container">
+				<li class="item"><a href="">Menu 1</a></li>
+				<li class="sep">|</li>
+				<li class="item"><a href="">Menu 2</a></li>
+				<li class="sep">|</li>
+				<li class="item"><a href="">Menu 3</a></li>
+			</ul>
+			<div class="flex">
+				<div class="f-col">
+					<h5>Color</h5>
+					<label class="pad-sm c-base">.c-base</label>
+					<label class="pad-sm c-danger">.c-danger</label>
+					<label class="pad-sm c-warning">.c-warning</label>
+					<label class="pad-sm c-success">.c-success</label>
+					<label class="pad-sm c-info">.c-info</label>
+					<label class="pad-sm c-primary">.c-primary</label>
+					<label class="pad-sm c-trans">.c-trans</label>
+					<label class="pad-sm c-purple">.c-purple</label>
+					<label class="pad-sm c-tosca">.c-tosca</label>
+				</div>
+				<div class="f-col">
+					<h5>Padding</h5>
+					<label class="pad-xs c-trans">.pad-xs</label>
+					<label class="pad-sm c-trans">.pad-sm</label>
+					<label class="pad-md c-trans">.pad-md</label>
+					<label class="pad-lg c-trans">.pad-lg</label>
+				</div>
+			</div>
+			<hr>
+			<div class="flex">
+				<div class="f-col">
+					<h5>Container</h5>
+					<label>.flex (padding 10px)</label><br>
+					<label>.flex-in (padding 0px)</label><br>
+					<label>.f-col, .f-col-(10-90)</label>
+
+					<div class="flex pad-sm">
+						<div class="f-col f-float-round">
+							<label>.f-col .f-float-round</label>
+						</div>
+						<div class="f-col f-bordered">
+							<label>.f-col .f-bordered</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="flex">
+				<div class="f-col">
+					<h5>Header & Label</h5>
+					<div class="flex-in">
+						<div class="f-col">
+							<h1>Header 1</h1>
+							<h2>Header 2</h2>
+							<h3>Header 3</h3>
+							<h4>Header 4</h4>
+							<h5>Header 5</h5>
+							<h6>Header 6</h6>
+						</div>
+						<div class="f-col">
+							<div class="label-header">Label Header</div>
+							<h6>Label 1 (.label)</h6>
+							<div class="label pad-xs">
+								<div class="title">Title</div>
+								<div class="desc">Description</div>
+								<div class="desc-clr">Description w/ color</div>
+							</div>
+							<div class="label pad-xs">
+								<div class="title">Status</div>
+								<div class="status-0">Active</div>
+								<div class="status-1">Not Active</div>
+							</div>
+							<hr>
+							<h6>Label 2 (.label-2)</h6>
+							<div class="label-2 pad-xs">
+								<div class="title">Title</div>
+								<div class="desc-clr">Description</div>
+							</div>
+							<hr>
+							<h6>Label 3 (.label-3)</h6>
+							<div class="label-3 pad-xs">
+								<div class="f-col-3 bold">Title</div>
+								<div class="f-col-7">: Description</div>
+							</div>
+							<hr>
+							<h6>Doted List</h6>
+							<div class="label-doted">
+								<div class="doted"></div>
+								<div class="desc">
+									<h6>Title</h6>
+									<table>
+										<tbody>
+											<tr>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+											</tr>
+											<tr>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+												<td>data</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="flex">
+				<div class="f-col">
+					<h5>Label Info </h5>
+					<div class="header-info info-success">Information Success</div>
+					<div class="header-info info-warning">Information Warning</div>
+					<div class="header-info info-danger">Information Danger</div>
+				</div>
+			</div>
+			<hr>
+			<div class="flex">
+				<div class="f-col">
+					<h5>Form</h5>
+					<div class="label">
+						<div class="title">Text</div>
+						<input type="text" class="form-control" name="" value="">
+					</div>
+					<div class="label">
+						<div class="title">Password</div>
+						<input type="password" class="form-control" name="" value="">
+					</div>
+					<div class="label">
+						<div class="title">Date</div>
+						<input type="text" class="form-control i-date" name="" placeholder="Pilih Tanggal">
+					</div>
+					<div class="label">
+						<div class="title">Select</div>
+						<select class="form-control" name="">
+							<option value="">-- Choose --</option>}
+						</select>
+					</div>
+				</div>
+				<div class="f-col">
+					<h5>Button</h5>
+					<button class="btn btn-secondary btn-sm">.btn .btn-sm</button>
+					<button class="btn btn-secondary">.btn</button>
+					<button class="btn btn-secondary btn-lg">.btn .btn-lg</button>
+					<button class="btn btn-success btn-block">.btn .btn-block</button>
+					<br>
+					<button class="btn btn-danger">.btn .btn-danger</button>
+					<button class="btn btn-warning">.btn .btn-warning</button>
+					<button class="btn btn-success">.btn .btn-success</button>
+					<button class="btn btn-info">.btn .btn-info</button>
+					<button class="btn btn-primary">.btn .btn-primary</button>
+					<button class="btn btn-secondary">.btn .btn-secondary</button>
+					<button class="btn btn-secondary rounded">.btn .rounded</button>
+					<hr>
+					<h5>Button Action</h5>
+					<p>Automatic genrate 3 button Detail, Edit, Delete (include ajax)</p>
+					<button class='button-action' value="1"></button>
+				</div>
+			</div>
+			<hr>
+			<div class="flex">
+				<div class="f-col">
+					<h5>Table</h5>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Header</th>
+								<th>Button</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Data</td>
+								<td>
+									<button class='button-action' value="1"></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="f-col">
+					<h5>Table</h5>
+					<table class="table table-clr table-bordered">
+						<thead>
+							<tr>
+								<th>Header</th>
+								<th>Button</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Data</td>
+								<td>
+									<button class='button-action' value="1"></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="f-col">
+					<h5>Image</h5>
+					<div class="flex">
+						<div class="f-col f-float-round pad-lg">
+							<div class="image-round">
+								<label class="profil-init">AC</label>
+								<img src="" alt="">
+							</div>
+							<div class="bg-profil"></div>
+						</div>
+						<div class="f-col">
+							<div class="image-circle">
+								<img src="image/profile_photo/profile.png" alt="">
+							</div>
+						</div>
+						<div class="f-col">
+							<div class="image-round">
+								<img src="image/profile_photo/profile.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="f-col">
+					<h5>Grafik</h5>
+					<div id="container-chart"></div>
+				</div>
+				<div class="f-col">
+					<h5>Maps</h5>
+					<div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">gps coordinates</a></iframe></div>
+				</div>
+			</div>
+		</div>
+		<div class="col col-menu">
+			<div class="menu-logo">
+				<img src="image/asset/app-logo.png" alt="">
+			</div>
+			<div class="menu-button">
+				<a href="app_dashboard.html" class="menu-item active">
+					<div class="menu-icon">
+						<img src="image/asset/web.png" alt="">
+					</div>
+					<div class="menu-text">
+						<div class="menu-title">Menu Active</div>
+						<div class="menu-desc">Desc - lorem ipsum dolor si amet lorem ipsum dolor si amet </div>
+					</div>
+				</a>
+			</div>
+			<div class="menu-button">
+				<a href="app_dashboard.html" class="menu-item">
+					<div class="menu-icon">
+						<img src="image/asset/web.png" alt="">
+					</div>
+					<div class="menu-text">
+						<div class="menu-title">Menu</div>
+						<div class="menu-desc">Desc - lorem ipsum dolor si amet lorem ipsum dolor si amet </div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer-container">
+		<label>Nine Cloud 2019</label>
+	</div>
+</body>
+<script src="internal/js/general.js"></script>
+</html>

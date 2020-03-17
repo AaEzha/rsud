@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+
+	<!-- Javascript External -->
+	<script src="external/js/jquery.js"></script>
+	<script src="external/js/bootstrap.min.js"></script>
+
+	<!-- Javascript Internal -->
+	<script src="internal/js/button_action.js"></script>
+	<script src="internal/js/modal.js"></script>
+
+	<!-- CSS External -->
+	<link rel="stylesheet" type="text/css" href="external/css/bootstrap.min.css">
+	
+	<!-- CSS Internal -->
+	<link rel="stylesheet" type="text/css" href="internal/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/modal.css">
+	<link rel="stylesheet" type="text/css" href="internal/css/loading.css">
+</head>
+
+<body class="dashboard-body">
+	<div class="loading">
+		<img src="image/asset/loading.gif" alt="">
+	</div>
+	<div class="modal-item"></div>
+
+	<div class="background-glass">
+	</div>
+	<div class="header-container">
+		<div class="logo-container">
+			<img src="image/asset/login-logo.png" alt="">			
+		</div>
+		<div class="logout-container logout-btn" data-link="<?= base_url(authenticate/logout">
+			<img src="image/asset/wt-logout.png" alt="">
+			<p>Logout</p>
+		</div>
+	</div>
+	<div class="content-container">
+		<div class="content-component">
+			<div class="text-1">Selamat Datang</div>
+			<div class="textc-1">SOMEONE</div>
+			<div class="text-2">ADMIN</div>
+			<div class="text-2">TOKA JAGUNG APP</div>
+			<div class="text-1">Semoga Harimu Menyenangkan</div>
+			<br>
+			<br>
+			<div class="text-3 running-time"></div>
+			<div class="text-3 running-date"></div>
+		</div>
+	</div>
+	<div class="footer-container">
+		<a class="button-menu" href="profile_dashboard.html">
+			<div class="img-menu">
+				<img src="image/asset/wt-curriculum.png" alt="">
+			</div>
+			<div class="header-menu">
+				MY ACCOUNT
+			</div>
+			<div class="desc-menu">
+				Informasi tentang personal data dan akses sistem
+			</div>
+		</a>
+		<a class="button-menu" href="app_dashboard.html">
+			<div class="img-menu">
+				<img src="image/asset/wt-speed.png" alt="">
+			</div>
+			<div class="header-menu">
+				GO TO APPLICATION
+			</div>
+			<div class="desc-menu">
+				Pergi ke aplikasi untuk membantu menjalankan aktifitas kerja
+			</div>
+		</a>
+		<a class="button-menu" href="master_dashboard.html">
+			<div class="img-menu">
+				<img src="image/asset/wt-backup.png" alt="">
+			</div>
+			<div class="header-menu">
+				MASTER DATA
+			</div>
+			<div class="desc-menu">
+				Simpan data aktifitas sistem untuk keamanan data
+			</div>
+		</a>
+	</div>
+</body>
+<script src="internal/js/general.js"></script>
+</html>
